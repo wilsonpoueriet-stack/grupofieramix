@@ -1,0 +1,31 @@
+GRUPO FIERAMIX.COM — PORTAL V2 COMPLETO
+
+CONTENIDO
+- Reproductor para 9 emisoras.
+- Identidad y eslogan oficial de cada señal.
+- Metadata y portada cuando el servidor permite su lectura.
+- Historial de las últimas 10 canciones.
+- Top 10 por emisora.
+- Top 25 general.
+- Vista “¿Qué suena en Fieramix?”.
+- Programación.
+- FIERAMIX Noticias.
+- Redes sociales.
+- WhatsApp de contacto: +1 809-841-9586.
+- Club de Oyentes del Grupo Fieramix.com.
+- Menú flotante de WhatsApp con dos opciones.
+- Invitación emergente al Club de Oyentes.
+- Diseño adaptable y PWA.
+
+PUBLICACIÓN
+1. Descomprime el ZIP.
+2. Sube todo el contenido de la carpeta portal_fieramix_v2_completo a public_html.
+3. También puede publicarse arrastrando la carpeta a Netlify Drop.
+
+NOTA SOBRE LOS RANKINGS
+El Top 10 y Top 25 de esta versión se generan con metadata detectada y se guardan en el navegador.
+Para estadísticas centralizadas de todos los oyentes se necesita una base de datos o API del servidor.
+
+
+NOMBRE Y ESLOGAN DEBAJO DEL LOGO
+Cada tarjeta de emisora muestra el nombre oficial y su eslogan directamente debajo del logo.
