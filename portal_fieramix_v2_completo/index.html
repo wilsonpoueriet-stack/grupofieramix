@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#060a12">
+<title>Grupo Fieramix.com | La red latina que mueve el mundo</title>
+<meta name="description" content="Portal oficial de Grupo Fieramix.com. Escucha nuestras emisoras online en vivo.">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="assets/logos/grupo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="container nav">
+ <a class="brand" href="#"><img src="assets/logos/grupo.png"><div><strong>GRUPO FIERAMIX.COM</strong><span>LA RED LATINA QUE MUEVE EL MUNDO</span></div></a>
+ <nav class="navlinks"><a href="#emisoras">Emisoras</a><a href="#canciones">Ahora suena</a><a href="#en-vivo-todas">Qué suena</a><a href="#charts">Top</a><a href="#programacion">Programación</a><a href="#noticias">Noticias</a><a href="#club-oyentes">Club</a></nav>
+</div></header>
+
+<main class="container">
+<section class="hero">
+ <div><h1>La música latina <em>sin fronteras.</em></h1>
+ <p>Disfruta merengue, bachata, salsa, baladas, urbano, rancheras, música internacional y cristiana desde un solo portal.</p>
+ <div class="hero-actions"><button class="btn btn-primary" id="heroPlay">▶ Escuchar ahora</button><a class="btn btn-secondary" href="#emisoras">Explorar emisoras</a></div>
+ </div>
+ <div class="hero-visual"><img id="heroLogo" src="assets/logos/fieramix.png"><div class="live-line"><div><strong id="heroName">FIERAMIX</strong><br><span id="heroTag" style="color:var(--muted);font-size:13px">La Brava</span></div><div class="live-badge"><span class="dot"></span>EN VIVO</div></div></div>
+</section>
+
+<section id="emisoras">
+ <div class="section-head"><div><h2>Nuestras emisoras</h2><p>Selecciona la señal que deseas escuchar.</p></div><input id="search" class="search" placeholder="Buscar emisora…"></div>
+ <div id="grid" class="grid"></div>
+</section>
+
+<section class="now-section" id="canciones">
+ <article class="panel">
+  <div class="cover"><img id="cover" src="assets/logos/fieramix.png" alt="Portada del álbum"></div>
+  <div class="kicker">CANCIÓN ACTUAL</div><h2 id="trackTitle" class="track-title">Transmisión en vivo</h2><div id="trackArtist" class="track-artist">FIERAMIX</div>
+  <div id="metadataNote" class="note">Buscando metadata de la emisora…</div>
+ </article>
+ <div>
+  <article class="panel history"><h2>Últimas 10 canciones</h2><div id="historyList" class="history-list"></div></article>
+  <article class="panel socials" id="redes"><h2>Síguenos</h2><div class="social-grid">
+   <a class="social" data-social="facebook" target="_blank">Facebook</a>
+   <a class="social" data-social="instagram" target="_blank">Instagram</a>
+   <a class="social" data-social="x" target="_blank">X</a>
+   <a class="social" data-social="tiktok" target="_blank">TikTok</a>
+   <a class="social" data-social="youtube" target="_blank">YouTube</a>
+   <a class="social" data-social="whatsapp" target="_blank">WhatsApp</a>
+  </div></article>
+ </div>
+</section>
+
+
+
+<section id="en-vivo-todas" class="all-live-section">
+  <div class="section-head"><div><h2>¿Qué suena en Fieramix?</h2><p>Consulta las nueve señales del grupo desde una sola pantalla.</p></div></div>
+  <div id="allLiveGrid" class="all-live-grid"></div>
+</section>
+
+<section id="programacion">
+  <div class="section-head"><div><h2>Programación</h2><p>Contenido continuo para acompañarte las 24 horas.</p></div></div>
+  <div class="schedule-grid">
+    <article class="panel schedule-card"><span>06:00 a. m. – 10:00 a. m.</span><h3>La mañana Fieramix</h3><p>Música, energía e información para comenzar el día.</p></article>
+    <article class="panel schedule-card"><span>10:00 a. m. – 04:00 p. m.</span><h3>Selección continua</h3><p>Los éxitos de cada género, sin interrupciones innecesarias.</p></article>
+    <article class="panel schedule-card"><span>04:00 p. m. – 08:00 p. m.</span><h3>La tarde que te mueve</h3><p>Ritmo, entretenimiento y participación de los oyentes.</p></article>
+    <article class="panel schedule-card"><span>08:00 p. m. – 06:00 a. m.</span><h3>Noches Fieramix</h3><p>Programación especial según el formato de cada emisora.</p></article>
+  </div>
+</section>
+
+<section id="noticias">
+  <div class="section-head"><div><h2>FIERAMIX Noticias</h2><p>Un espacio preparado para publicar las informaciones más importantes.</p></div></div>
+  <div class="news-grid">
+    <article class="panel news-card"><span>REPÚBLICA DOMINICANA</span><h3>Actualidad nacional</h3><p>Noticias de interés público, comunidades, instituciones y servicios.</p></article>
+    <article class="panel news-card"><span>ENTRETENIMIENTO</span><h3>Música y espectáculos</h3><p>Novedades de artistas, lanzamientos, eventos y cultura popular.</p></article>
+    <article class="panel news-card"><span>INTERNACIONAL</span><h3>El mundo en resumen</h3><p>Los hechos internacionales explicados de forma clara y directa.</p></article>
+  </div>
+</section>
+
+<section id="charts" class="charts-section">
+  <div class="section-head">
+    <div>
+      <h2>Ranking musical</h2>
+      <p>Las canciones más sonadas en Grupo Fieramix.com.</p>
+    </div>
+  </div>
+
+  <div class="charts-grid">
+    <article class="panel chart-panel">
+      <div class="chart-header">
+        <div>
+          <div class="kicker">POR EMISORA</div>
+          <h2>Top 10</h2>
+        </div>
+        <select id="chartStation" class="chart-select" aria-label="Seleccionar emisora"></select>
+      </div>
+      <div id="stationTop10" class="chart-list"></div>
+    </article>
+
+    <article class="panel chart-panel">
+      <div class="chart-header">
+        <div>
+          <div class="kicker">GRUPO FIERAMIX.COM</div>
+          <h2>Top 25 general</h2>
+        </div>
+      </div>
+      <div id="generalTop25" class="chart-list chart-scroll"></div>
+    </article>
+  </div>
+
+  <div class="chart-note">
+    Los rankings se construyen con las canciones detectadas por la metadata del reproductor. 
+    Para estadísticas globales de todos los oyentes se necesita conectar una base de datos o las estadísticas del servidor RadioBOSS.
+  </div>
+</section>
+
+<section class="panel about" id="nosotros">
+ <div><h2>Grupo Fieramix.com</h2><p>Somos la red latina que mueve el mundo: un grupo de emisoras online especializadas, diseñadas para acompañar a nuestra audiencia las 24 horas desde cualquier lugar.</p><p><strong>WhatsApp oficial:</strong> +1 (809) 841-9586</p></div>
+ <div class="features"><div class="feature"><strong>9 emisoras</strong><span>Una señal para cada gusto.</span></div><div class="feature"><strong>24 horas</strong><span>Programación continua.</span></div><div class="feature"><strong>Multidispositivo</strong><span>Celular, tableta y computadora.</span></div><div class="feature"><strong>Un solo portal</strong><span>Cambio de señal instantáneo.</span></div></div>
+</section>
+<footer>© <span id="year"></span> Grupo Fieramix.com · Todos los derechos reservados.</footer>
+
+<section id="club-oyentes" class="club-section">
+      <div class="club-copy">
+        <div class="kicker">COMUNIDAD OFICIAL</div>
+        <h2>Club de Oyentes del Grupo Fieramix.com</h2>
+        <p>Únete a la comunidad de quienes viven la música las 24 horas. Recibe noticias, estrenos, programación especial, concursos y contenido exclusivo.</p>
+        <a class="btn club-btn" href="https://chat.whatsapp.com/JJfXFBwAG3O8DIKs9ufvJt" target="_blank" rel="noopener noreferrer">📲 Unirme al Club de Oyentes</a>
+      </div>
+      <div class="club-badge">🎧<strong>GRUPO<br>FIERAMIX.COM</strong><span>Club de Oyentes</span></div>
+    </section>
+
+</main>
+
+<div class="wa-floating">
+      <button class="whatsapp" id="waToggle" title="WhatsApp" aria-label="Abrir opciones de WhatsApp">✆</button>
+      <div class="wa-menu" id="waMenu">
+        <a href="https://wa.me/18098419586" target="_blank" rel="noopener noreferrer">💬 Escribirnos</a>
+        <a href="https://chat.whatsapp.com/JJfXFBwAG3O8DIKs9ufvJt" target="_blank" rel="noopener noreferrer">🎧 Club de Oyentes</a>
+      </div>
+    </div>
+    <div class="club-popup" id="clubPopup" aria-hidden="true">
+      <div class="club-popup-card">
+        <button class="popup-close" id="popupClose" aria-label="Cerrar">×</button>
+        <div class="popup-icon">🎧</div>
+        <h2>Únete al Club de Oyentes</h2>
+        <p>Forma parte de la comunidad oficial de GRUPO FIERAMIX.COM y recibe novedades, concursos y programación especial.</p>
+        <a class="btn club-btn" href="https://chat.whatsapp.com/JJfXFBwAG3O8DIKs9ufvJt" target="_blank" rel="noopener noreferrer">Unirme por WhatsApp</a>
+        <button class="later-btn" id="popupLater">Ahora no</button>
+      </div>
+    </div>
+<div class="player"><div class="container player-inner">
+ <div class="now"><img id="playerLogo" src="assets/logos/fieramix.png"><div><strong id="playerName">FIERAMIX</strong><span id="playerTag">La Brava</span></div></div>
+ <div class="controls"><button class="control" id="shareBtn">↗</button><button class="control main" id="playBtn">▶</button><button class="control" id="muteBtn">🔊</button></div>
+ <div><div class="volume">🔉 <input id="volume" type="range" min="0" max="1" step=".01" value=".85"></div><div class="status" id="status">Lista para reproducir</div></div>
+</div></div>
+<audio id="audio" preload="none"></audio>
+<script src="js/app.js"></script>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))}</script>
+</body></html>
