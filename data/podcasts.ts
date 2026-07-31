@@ -1,0 +1,1 @@
+export const podcasts=[{id:1,title:"La Oración de las 8"},{id:2,title:"José, del Pozo al Propósito"},{id:3,title:"Abraham: Un Camino de Fe"}];

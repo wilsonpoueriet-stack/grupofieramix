@@ -1,0 +1,1 @@
+export const pages={home:{title:"Inicio",heading:"GRUPO FIERAMIX.COM",intro:"La Red Latina que Mueve el Mundo."},about:{title:"¿Quiénes Somos?",intro:"Somos una plataforma multimedia con emisoras, noticias y podcasts."}};

@@ -1,0 +1,1 @@
+export const schedule=[{time:"08:00 AM",program:"La Oración de las 8",station:"Solo Música Cristiana"}];

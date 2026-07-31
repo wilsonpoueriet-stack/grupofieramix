@@ -1,0 +1,1 @@
+export const news=[{id:1,title:"Bienvenido a Fieramix Noticias",category:"General",summary:"Próximamente encontrarás aquí las noticias más importantes."}];

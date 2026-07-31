@@ -1,0 +1,1 @@
+export const settings={siteName:"GRUPO FIERAMIX.COM",slogan:"LA RED LATINA QUE MUEVE EL MUNDO",description:"La mejor música latina de todos los tiempos.",phone:"+1 809 841 9586",email:"info@fieramix.com"};
