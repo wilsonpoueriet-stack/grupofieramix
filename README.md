@@ -51,3 +51,19 @@ La primera entrega ya muestra las nueve emisoras con:
 - Podcasts.
 - Dedicatorias y Club de Oyentes.
 - Analíticas.
+
+
+## Actualización V2
+- Nueva portada profesional.
+- Reproductor fijo inferior.
+- Navegación móvil.
+- Noticias, programación y Club de Oyentes.
+
+
+## VERSIÓN 3
+- Encabezado oficial de GRUPO FIERAMIX.COM.
+- Frase principal: LA MEJOR MÚSICA LATINA DE TODOS LOS TIEMPOS.
+- Todos los encabezados principales en mayúsculas.
+- Nueva sección EMISORA DESTACADA.
+- FIERAMIX NOTICIAS reforzado con identidad de marca.
+- Navegación y botones actualizados.
